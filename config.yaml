@@ -1,0 +1,35 @@
+people:
+  Alice:
+    age: 37
+    job: advanced bazification research
+    pets:
+      Ham Ham:
+        species: hamster
+        age: 2
+        likes: carrots
+        dislikes: sneks
+  Jeremy:
+    age: 23
+    job: frobnicator
+    allergies:
+    - peanuts
+    - sass
+    pets:
+      Spanky:
+        species: dog
+        age: 3
+        likes: naps
+        dislikes: sneks
+      Mr. Waffles:
+        species: cat
+        age: 7
+        likes: the flesh of the weak
+        dislikes: sneks
+
+fruits:
+  kumquat:
+    weight: 20g
+    calories: 13
+  watermelon:
+    weight: 9000g
+    calories: 1371
