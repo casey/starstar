@@ -1,14 +1,7 @@
-# get jinja 2
-# get pyyaml
-# write readme
-# load yaml file
-# splat into objects
-# write into template
-
 Why?
 
 config parsing
-post on reddit
+reddit/fb
 
 resistant to bugs
 - if you add a new item to a config then you'll get an error,

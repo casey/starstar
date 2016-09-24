@@ -3,31 +3,30 @@
 import jinja2, yaml
 
 class Person:
-  def __init__(self, name, *, age, job, pets, allergies=()):
+  def __init__(self, name, *, age, job, pets=()):
     self.name      = name
-    self.age       = age
+    self.age       = int(age)
     self.job       = job
-    self.allergies = allergies
     self.pets      = [Pet(name, **pets[name]) for name in pets]
 
 class Pet:
   def __init__(self, name, *, species, age, likes, dislikes):
     self.name     = name
-    self.age      = age
+    self.age      = int(age)
     self.likes    = likes
     self.dislikes = dislikes
     self.species  = species
 
-class Fruit:
-  def __init__(self, name, *, weight, calories):
-    self.name     = name
-    self.weight   = weight
-    self.calories = calories
+class Day:
+  def __init__(self, *, english, french, swedish):
+    self.english = english
+    self.french  = french
+    self.swedish = swedish
 
 class Context:
-  def __init__(self, people, fruits):
+  def __init__(self, people, days):
     self.people = [Person(name, **people[name]) for name in people]
-    self.fruits = [Fruit(name, **fruits[name]) for name in fruits]
+    self.days   = [Day(**day) for day in days]
   def __iter__(self):
     return self.__dict__.items().__iter__()
 

@@ -11,9 +11,6 @@ people:
   Jeremy:
     age: 23
     job: frobnicator
-    allergies:
-    - peanuts
-    - sass
     pets:
       Spanky:
         species: dog
@@ -25,11 +22,35 @@ people:
         age: 7
         likes: the flesh of the weak
         dislikes: sneks
+  Bob:
+    age: 40
+    job: prognosticator
 
-fruits:
-  kumquat:
-    weight: 20g
-    calories: 13
-  watermelon:
-    weight: 9000g
-    calories: 1371
+days:
+- english: Monday
+  french:  Lundi
+  swedish: Måndag
+
+- english: Tuesday
+  french:  Mardi
+  swedish: Tisdag
+
+- english: Wednesday
+  french:  Mercredi
+  swedish: Onsdag
+
+- english: Thursday
+  french:  Jeudi
+  swedish: Torsdag
+
+- english: Friday
+  french:  Vendredi
+  swedish: Fredag
+
+- english: Saturday
+  french:  Samedi
+  swedish: Lördag
+
+- english: Sunday
+  french:  Dimache
+  swedish: Söndag
