@@ -1,13 +1,13 @@
 ## All about some humans
-- Bob, 40, is a prognosticator
-
-- Alice, 37, is a advanced bazification research and has 1 pets:
+- Alice, 37, is a senior advanced bazification researcher and has 1 pet:
   - Ham Ham, a cute little hamster who is 2 years old and likes carrots
 
 
+- Bob, 40, is a senior prognosticator
+
 - Jeremy, 23, is a frobnicator and has 2 pets:
-  - Spanky, a cute little dog who is 3 years old and likes naps
   - Mr. Waffles, a cute little cat who is 7 years old and likes the flesh of the weak
+  - Spanky, a cute little dog who is 3 years old and likes naps
 
 
 

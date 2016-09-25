@@ -1,6 +1,6 @@
 ## All about some humans
 {% for person in people %}
-- {{person.name}}, {{person.age}}, is a {{person.job}}{% if person.pets %} and has {{person.pets | length}} pets:
+- {{person.name}}, {{person.age}}, is a {{person.job}}{% if person.pets %} and has {{person.pets | length}} {{ 'pet' if (person.pets | length) == 1 else 'pets' }}:
 {% for pet in person.pets %}
   - {{pet.name}}, a cute little {{pet.species}} who is {{pet.age}} years old and likes {{pet.likes}}
 {% endfor %}

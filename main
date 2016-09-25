@@ -3,13 +3,15 @@
 import jinja2, yaml
 
 class Person:
+  '''A class that represents a person'''
   def __init__(self, name, *, age, job, pets=()):
     self.name      = name
     self.age       = int(age)
-    self.job       = job
-    self.pets      = [Pet(name, **pets[name]) for name in pets]
+    self.job       = job if self.age < 25 else 'senior ' + job
+    self.pets      = [Pet(name, **pets[name]) for name in sorted(pets)]
 
 class Pet:
+  '''A class that represents a pet'''
   def __init__(self, name, *, species, age, likes):
     self.name     = name
     self.age      = int(age)
@@ -17,24 +19,29 @@ class Pet:
     self.species  = species
 
 class Day:
+  '''A class that represents a day of the week'''
   def __init__(self, *, english, french, swedish):
     self.english = english
     self.french  = french
     self.swedish = swedish
 
 class Context:
+  '''The context for our template'''
   def __init__(self, people, days):
-    self.people = [Person(name, **people[name]) for name in people]
+    self.people = [Person(name, **people[name]) for name in sorted(people)]
     self.days   = [Day(**day) for day in days]
   def __iter__(self):
+    '''This allows an object other than a dict to be used as a Jinja2 template context'''
     return self.__dict__.items().__iter__()
 
 # load the config file
 with open('config.yaml', 'r') as f:
   config = yaml.load(f.read())
 
+# parse the loaded data into objects
 context = Context(**config)
 
+# set up our jinja2 enivironmnet
 environment = jinja2.Environment(
   lstrip_blocks=True,
   trim_blocks=True,
@@ -45,7 +52,9 @@ environment = jinja2.Environment(
 with open('template.md', 'r') as f:
   template = environment.from_string(f.read())
 
+# render the template
 output = template.render(context)
 
+# write the template to disk
 with open('output.md', 'w') as f:
   f.write(output)
