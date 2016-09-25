@@ -27,4 +27,4 @@ Files:
 - `template.md` is the jinja2 markdown template
 - `output.md` is the rendered template
 - `yaml` is a copy of the PyYAML YAML library
-- `jinja2` is a copy of Jinja2 template engine
+- `jinja2` is a copy of the Jinja2 template engine
