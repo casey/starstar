@@ -7,7 +7,6 @@ people:
         species: hamster
         age: 2
         likes: carrots
-        dislikes: sneks
   Jeremy:
     age: 23
     job: frobnicator
@@ -16,12 +15,10 @@ people:
         species: dog
         age: 3
         likes: naps
-        dislikes: sneks
       Mr. Waffles:
         species: cat
         age: 7
         likes: the flesh of the weak
-        dislikes: sneks
   Bob:
     age: 40
     job: prognosticator

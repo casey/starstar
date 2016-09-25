@@ -10,11 +10,10 @@ class Person:
     self.pets      = [Pet(name, **pets[name]) for name in pets]
 
 class Pet:
-  def __init__(self, name, *, species, age, likes, dislikes):
+  def __init__(self, name, *, species, age, likes):
     self.name     = name
     self.age      = int(age)
     self.likes    = likes
-    self.dislikes = dislikes
     self.species  = species
 
 class Day:
