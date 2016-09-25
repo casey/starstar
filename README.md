@@ -17,4 +17,4 @@ There are a number of advantages to this approach:
 
 - If you misspell a property name in a template you'll get an error message which has the class name in it, instead of a generic dictionary key error.
 
-- It's concise and appealing.
+- It is concise and appealing.
