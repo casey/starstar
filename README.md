@@ -18,3 +18,13 @@ There are a number of advantages to this approach:
 - If you misspell a property name in a template you'll get an error message which has the class name in it, instead of a generic dictionary key error.
 
 - It is concise and appealing.
+
+Files:
+
+- `main` is the code. Start reading here
+- `README.md` is this readme
+- `config.yaml` is the YAML config file
+- `template.md` is the jinja2 markdown template
+- `output.md` is the rendered template
+- `yaml` is a copy of the PyYAML YAML library
+- `jinja2` is a copy of Jinja2 template engine
